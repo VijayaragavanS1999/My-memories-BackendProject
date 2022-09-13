@@ -1,0 +1,56 @@
+body {
+  background-color: #5cdb95;
+  font-family: "Yeseva One" !important;
+}
+.container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  background-color: #5cdb95 !important;
+  font-family: "Yeseva One" !important;
+
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.navbar-brand {
+  color: #05386b !important;
+  font-weight: bolder;
+}
+.nav-link {
+  color: #05386b !important;
+  margin-right: 20px;
+}
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+.homeContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.homeTitle {
+  margin: 20px 0;
+  color: #edf5e1 !important;
+}
+
+.homeContent {
+  color: black !important;
+  margin-left: 40px;
+}
+
+/* composePage */
+.composeContainer {
+  display: flex;
+  flex-direction: row;
+}
+.composeinput {
+  margin-left: 50px !important;
+  width: 30% !important;
+}
