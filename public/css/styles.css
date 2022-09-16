@@ -37,7 +37,7 @@ body {
 }
 .homeTitle {
   margin: 20px 0;
-  color: #edf5e1 !important;
+  color: #05386b !important;
 }
 
 .homeContent {
@@ -48,9 +48,29 @@ body {
 /* composePage */
 .composeContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-.composeinput {
+.homeSubTitle {
   margin-left: 50px !important;
-  width: 30% !important;
+  margin: 20px 0;
+}
+.composeTitleinput {
+  margin-left: 70px !important;
+  width: 90% !important;
+  background-color: #5cdb95;
+  border-color: #05386b;
+}
+.composePostinput {
+  background-color: #5cdb95;
+  margin-left: 70px !important;
+  width: 90% !important;
+  border-color: #05386b;
+  height: 100px;
+}
+.composeBtn {
+  margin-left: 70px !important;
+  margin-top: 10px;
+  width: 100px;
+  justify-content: center;
+  background-color: #bee4af;
 }

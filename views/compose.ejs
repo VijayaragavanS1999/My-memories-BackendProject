@@ -11,14 +11,27 @@
     <%- include('./common/header'); -%>
     <div class="homeContainer">
       <h1 class="homeTitle">Compose</h1>
-      <div class="composeContainer">
-        <input
-          class="composeinput form-control me-2"
+      <!-- Create form to transfer the event to app  -->
+      <form action="/compose" method="post">  
+        <div class="composeContainer">
+          <h2 class="homeSubTitle">Title</h2>
+          <input
+          class="composeTitleinput form-control me-2"
           type="search"
-          placeholder="Search"
+          name="composeTitle"
+          placeholder="What is the title ?"
           aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+          />
+          <h2 class="homeSubTitle">Post</h2>
+          <input
+          class="composePostinput form-control me-2"
+          type="search"
+          name="composePost"
+          placeholder="Write Something..."
+          aria-label="Search"
+          />
+          <button class="composeBtn btn btn-outline-success" type="submit">Publish</button>
+        </form>
       </div>
     </div>
   </body>

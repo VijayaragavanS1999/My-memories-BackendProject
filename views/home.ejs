@@ -10,8 +10,10 @@
   <body>
     <%- include('./common/header'); -%>
     <div class="homeContainer">
-      <h1 class="homeTitle">Hello</h1>
-      <p class="homeContent"><%=homeContent %></p>
+      <% posts.map(function(post){ %>
+      <h1 class="homeTitle"><%=post.title %></h1>
+      <p class="homeContent"><%=post.content %></p>
+      <% }) %>
     </div>
   </body>
 </html>
