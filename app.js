@@ -25,12 +25,21 @@ app.get("/", function (req, res) {
 app.get("/about", function (req, res) {
   res.render("about", { aboutContent: aboutContent });
 });
+app.get("/post/:name", (req, res) => {
+  const postName = req.params.name;
+  posts.forEach((post) => {
+    if (postName == post.title) {
+      res.render("post", { title: post.title, content: post.content });
+    }
+  });
+});
 app.get("/contact", function (req, res) {
   res.render("contact", { contactContent: contactContent });
 });
 app.get("/compose", function (req, res) {
   res.render("compose");
 });
+
 app.post("/compose", function (req, res) {
   const post = {
     title: req.body.composeTitle,

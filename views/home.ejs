@@ -12,7 +12,12 @@
     <div class="homeContainer">
       <% posts.map(function(post){ %>
       <h1 class="homeTitle"><%=post.title %></h1>
-      <p class="homeContent"><%=post.content %></p>
+      <p class="homeContent">
+        <% let myString = post.content %> <% let
+        truncatedValue=myString.substring(0,10) %> <%= truncatedValue%> ...
+        <a href="/post/<%= post.title%>">Read More</a>
+      </p>
+
       <% }) %>
     </div>
   </body>
