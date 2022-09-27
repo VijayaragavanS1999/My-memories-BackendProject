@@ -10,6 +10,11 @@
   <body>
     <%- include('./common/header'); -%>
     <div class="homeContainer">
+      <a class="nav-link" href="/compose">
+        <button class="homebtn btn btn-outline-success" type="submit">
+          + Compose Your Memory
+        </button>
+      </a>
       <% posts.map(function(post){ %>
       <h1 class="homeTitle"><%=post.title %></h1>
       <p class="homeContent">
